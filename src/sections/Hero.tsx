@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import Polaroid from '../components/Polaroid';
+import CakeIntro from '../components/CakeIntro';
 import { images } from '../data/images';
 import { girlfriendName } from '../data/content';
 
@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 py-24"
+      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 py-24 pb-16"
     >
       {/* Floating polaroids around hero, hidden on very small screens for the outer two */}
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -66,30 +66,7 @@ export default function Hero() {
         A little corner of the internet, made only for you.
       </motion.p>
 
-      <motion.button
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1.3 }}
-        onClick={scrollToStory}
-        className="group relative z-10 mt-12 flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-7 py-3 font-sans-ui text-sm tracking-wide text-gold shadow-[0_0_25px_rgba(217,184,114,0.15)] transition-all hover:bg-gold/20 hover:shadow-[0_0_35px_rgba(217,184,114,0.3)]"
-      >
-        Start Our Story
-        <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
-      </motion.button>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-8 z-10 text-paper/40"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          <ChevronDown size={22} />
-        </motion.div>
-      </motion.div>
+      <CakeIntro onStoryStart={scrollToStory} />
     </section>
   );
 }
