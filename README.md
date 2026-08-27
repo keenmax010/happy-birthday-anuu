@@ -36,10 +36,24 @@ All the copy — the story, the "why you're special" cards, the little-things fl
 the five letters, and the final message — lives in **`src/data/content.ts`**. Nothing else
 needs to change; the components just read from this file.
 
-## Adding background music
+## The cake intro
 
-Drop an mp3 at `public/music/theme.mp3`. The music button in the bottom-right corner
-will start working automatically — playback never starts on its own, only when it's tapped.
+Instead of a plain "Start Our Story" button, the hero opens with an interactive
+cake: tap to blow out the candle, a personalized "Happy Birthday" plays (an
+original Tone.js rendition of the public-domain tune, with a cute cartoon
+mascot cheering and party-popper confetti), then a "Cut the Cake" button
+appears — cutting it triggers one more confetti burst and smoothly carries
+into "Our Story." All of this lives in `src/components/CakeIntro.tsx`,
+`src/components/CheerMascot.tsx`, and `src/audio/birthdaySong.ts` if you want
+to tweak the wording, timing, or mascot styling.
+
+## Background music
+
+The music button in the bottom-right corner plays a soft original instrumental —
+generated live in the browser with Tone.js (see `src/audio/theme.ts`), so there's
+no audio file to source or license. Playback never starts on its own; it only
+begins when the button is tapped. You can tweak the chords, tempo, or tone
+color directly in that file if you want a different mood.
 
 ## Structure
 
