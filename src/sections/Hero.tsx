@@ -1,0 +1,95 @@
+import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
+import Polaroid from '../components/Polaroid';
+import { images } from '../data/images';
+import { girlfriendName } from '../data/content';
+
+export default function Hero() {
+  const scrollToStory = () => {
+    document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <section
+      id="hero"
+      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 py-24"
+    >
+      {/* Floating polaroids around hero, hidden on very small screens for the outer two */}
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <div className="absolute left-[4%] top-[14%] hidden sm:block">
+          <Polaroid photo={images.hero[0]} rotate={-8} size="sm" delay={0.2} />
+        </div>
+        <div className="absolute right-[5%] top-[10%]">
+          <Polaroid photo={images.hero[1]} rotate={6} size="sm" delay={0.5} />
+        </div>
+        <div className="absolute bottom-[16%] left-[6%]">
+          <Polaroid photo={images.hero[2]} rotate={5} size="sm" delay={0.8} />
+        </div>
+        <div className="absolute bottom-[10%] right-[4%] hidden sm:block">
+          <Polaroid photo={images.hero[3]} rotate={-6} size="sm" delay={1.1} />
+        </div>
+      </div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="relative z-10 mb-4 font-sans-ui text-xs uppercase tracking-[0.35em] text-rose/70"
+      >
+        September 2nd
+      </motion.p>
+
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+        className="relative z-10 text-center font-serif text-4xl font-light leading-tight text-paper sm:text-5xl md:text-6xl"
+      >
+        Happy Birthday
+      </motion.h1>
+
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="relative z-10 -mt-2 font-script text-7xl text-rose sm:text-8xl md:text-9xl"
+      >
+        {girlfriendName} <span className="text-lilac">&#10084;</span>
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="relative z-10 mt-6 max-w-xs text-center font-serif text-base italic text-paper/70 sm:max-w-sm sm:text-lg"
+      >
+        A little corner of the internet, made only for you.
+      </motion.p>
+
+      <motion.button
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.3 }}
+        onClick={scrollToStory}
+        className="group relative z-10 mt-12 flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-7 py-3 font-sans-ui text-sm tracking-wide text-gold shadow-[0_0_25px_rgba(217,184,114,0.15)] transition-all hover:bg-gold/20 hover:shadow-[0_0_35px_rgba(217,184,114,0.3)]"
+      >
+        Start Our Story
+        <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
+      </motion.button>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1 }}
+        className="absolute bottom-8 z-10 text-paper/40"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <ChevronDown size={22} />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}
