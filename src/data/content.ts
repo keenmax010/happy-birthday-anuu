@@ -11,27 +11,27 @@ export const storyMilestones = [
 export const whySpecialCards = [
   {
     title: 'Your caring nature',
-    body: 'You check on me on days I don\u2019t even ask you to. You remember things I mention once, in passing, and bring them up weeks later like they mattered. They did. You made them matter.',
+    body: 'Tumhe meri chhoti-chhoti baatein yaad rehti hain. Main kabhi casually kuch bol deta hoon, shayad uss waqt mujhe khud bhi yaad nahi rehta ki maine kya kaha tha… but tumhe yaad rehta hai. Phir jab tum weeks baad wahi baat mention karti ho, mujhe realize hota hai ki tum meri baaton ko actually sunti ho. Aur honestly, mujhe yeh bahut special lagta hai.',
   },
   {
     title: 'Your loyalty',
-    body: 'Distance tests people. It hasn\u2019t tested us the way I thought it might, because you\u2019ve never once made me doubt where I stand with you.',
+    body: 'Distance easy nahi hota. Kabhi kabhi darr lagta hai ki itni doori kahin cheezein change na kar de. But tumne mujhe kabhi aisa feel nahi hone diya. Tumne kabhi mujhe doubt nahi karne diya ki main tumhari life mein kahan stand karta hoon. Chahe hum kitne bhi door ho, tumne mujhe hamesha close feel karway',
   },
   {
     title: 'Your romantic side',
-    body: 'The little things you do without being asked \u2014 the messages, the way you say goodnight \u2014 they land harder than you probably realize.',
+    body: 'Tumhari little things mujhe sabse zyada hit karti hain. Ek random text, bina reason mera haal poochna, goodnight bolna, ya bas achanak keh dena ki tumhe meri yaad aa rahi thi. Tumhare liye shayad yeh normal ho, but mere liye nahi. Tumhari ek chhoti si message bhi kabhi kabhi mera poora mood change kar deti hai.',
   },
   {
     title: 'The way you understand me',
-    body: 'I don\u2019t have to explain myself twice. You just get it \u2014 the mood, the silence, the joke I didn\u2019t finish. You fill in the rest correctly, every time.',
+    body: 'Tumhare saath mujhe khud ko baar-baar explain karne ki zarurat nahi padti. Main chup hoon toh tum samajh jaati ho. Mera mood off hai toh tum notice kar leti ho. Main koi baat aadhi bolke chhod deta hoon toh tum somehow samajh jaati ho ki main actually kya kehna chahta tha. It feels good to be understood without having to explain everything.',
   },
   {
     title: 'The way you calmly accept me',
-    body: 'Even when I mess up. Even when I\u2019m difficult. You don\u2019t leave, you don\u2019t punish me for it. You just stay, and talk it through with me.',
+    body: 'Main perfect nahi hoon. Kabhi galti karta hoon, kabhi stupid behave karta hoon, kabhi unnecessarily difficult bhi ho jaata hoon. But tum meri ek galti ko meri poori personality nahi bana deti. Tum gussa hoti ho, baat karti ho, samjhati ho… but tum bas chhod ke nahi chali jaati. Tum mere saath rehkar cheezein solve karti ho. Aur honestly, that makes me value you even more.',
   },
   {
     title: 'Your presence',
-    body: 'Not what you do. Not what you say. Just you, existing, being somewhere in the world and choosing to spend your time on me.',
+    body: "Aur shayad sabse simple reason… mujhe tumhara kuch special karna bhi zaroori nahi lagta. Bas yeh sochna ki duniya mein kahin tum ho, apni life mein busy ho… aur phir bhi uss life mein se thoda sa time mere liye nikaalti ho — mujhe genuinely lucky feel karwata hai.Tumhe shayad yeh sab chhoti-chhoti cheezein lagti hongi. But mere liye, yahi chhoti cheezein hain jo mujhe baar-baar yaad dilati hain ki I found someone really special. And I'm glad that someone is you.",
   },
 ];
 
@@ -65,10 +65,7 @@ export const letters: Letter[] = [
     title: 'For My Anu',
     preview: 'On how you walked into my life uninvited and never left.',
     body: [
-      'I didn\u2019t plan for you. That\u2019s the truth of it \u2014 you weren\u2019t on any list, weren\u2019t something I was looking for the day we started talking.',
-      'And yet here you are, somehow one of the most important people in my life, having arrived through the most unlikely door I could\u2019ve imagined.',
-      'I think about that sometimes \u2014 how easily this could not have happened. How many small, unremarkable choices had to line up for you to find me, and for me to be someone worth staying for.',
-      'I\u2019m glad they lined up. I\u2019m glad it was you.',
+      "Maine tumhe kabhi plan nahi kiya tha. Sach kahun toh tum meri kisi list mein nahi thi, na hi main uss din kisi ko dhoond raha tha jab humne pehli baar baat karni start ki thi.Aur phir bhi… pata nahi kaise, tum meri life ke sabse important logon mein se ek ban gayi. Itne unexpected way mein tum meri life mein aayi, jiski maine kabhi imagine bhi nahi kiya tha.Kabhi kabhi main sochta hoon ki humara milna kitna unlikely tha. Kitni saari chhoti-chhoti cheezein, random decisions aur coincidences ek saath align hue honge… tab jaake tum mujhe mili. Aur main bas itna lucky tha ki main tumhare liye woh insaan ban saka jiske saath tum rukna chahti thi.Aur honestly… mujhe khushi hai ki woh sab choices align hui.Mujhe khushi hai ki tum meri life mein aayi.Mujhe khushi hai ki woh tum thi.",
     ],
   },
   {
@@ -76,9 +73,9 @@ export const letters: Letter[] = [
     title: 'The Way I Feel',
     preview: 'On ordinary days that became less ordinary because of you.',
     body: [
-      'There\u2019s a version of my day that exists without you in it, and I don\u2019t like thinking about that version very much.',
-      'You have this way of making an unremarkable Tuesday feel like it mattered \u2014 a call in the evening, a message in the middle of my work, your voice when I needed a break from everything else.',
-      'I don\u2019t say this enough, so let me say it plainly: your affection is not a small thing to me. I notice it. I hold onto it. It changes the shape of my days more than you probably know.',
+      'Meri day ka ek version aisa bhi ho sakta hai jisme tum nahi ho… aur honestly, mujhe uss version ke baare mein sochna bhi pasand nahi hai.',
+      'Tumhare paas na jaane kaise ek talent hai — tum ek bilkul normal, boring se Tuesday ko bhi special bana deti ho. Shaam ko tumhari call, kaam ke beech tumhara ek random message, ya jab sab kuch thoda overwhelming lag raha ho tab tumhari awaaz… pata nahi kaise, but tumhari presence har normal din ko thoda better bana deti hai.',
+      'Main shayad yeh tumhe enough nahi bolta, isliye aaj simply bol raha hoon — tumhara pyaar mere liye koi chhoti cheez nahi hai.Main notice karta hoon tum mujhe kaise care karti ho. Main un chhoti-chhoti cheezon ko yaad rakhta hoon. Aur shayad tumhe realize bhi nahi hai, but tum jis tarah meri life ka part ban gayi ho, usne mere days ko completely change kar diya hai.Tum sirf meri life ka ek part nahi ho… tum meri life ke normal days ko bhi worth remembering bana deti ho.I don\u2019t say this enough, so let me say it plainly: your affection is not a small thing to me. I notice it. I hold onto it. It changes the shape of my days more than you probably know.',
     ],
   },
   {
@@ -86,10 +83,13 @@ export const letters: Letter[] = [
     title: 'What You Mean To Me',
     preview: 'On caring, loyalty, understanding \u2014 and what they add up to.',
     body: [
-      'It would be easy to list the things you do for me. But that\u2019s not really what I want to talk about.',
-      'I want to talk about who you are underneath the things you do \u2014 someone caring almost by instinct, loyal without needing to be asked to be, and so quietly understanding that I sometimes don\u2019t notice how much you\u2019re carrying for me until later.',
-      'That\u2019s not something you do occasionally. It\u2019s something you are, consistently, in a way that\u2019s become part of my own happiness without me fully realizing when that happened.',
-      'You didn\u2019t just become someone I care about. You became part of what makes my life feel good.',
+      'Main easily un saari cheezon ki list bana sakta hoon jo tum mere liye karti ho. But honestly, main uske baare mein baat nahi karna chahta.',
+
+      'Main baat karna chahta hoon uss insaan ki jo tum un sab cheezon ke peeche ho — jo bina soche care karti ho, bina kahe loyal rehti ho, aur mujhe itna easily samajh leti ho ki kabhi kabhi mujhe baad mein realize hota hai tum mere liye kitna kuch carry karti ho.',
+
+      'Yeh tum kabhi-kabhi nahi karti. Yeh bas tumhara nature hai. Aur pata hi nahi chala kab tum meri happiness ka itna important part ban gayi.',
+
+      'Tum sirf meri life mein koi important person nahi bani… tum meri life ko better feel karwane ki wajah ban gayi ho.',
     ],
   },
   {
@@ -97,9 +97,9 @@ export const letters: Letter[] = [
     title: 'My Promise',
     preview: 'No fake promises. Just what\u2019s actually true.',
     body: [
-      'I\u2019m not going to promise you that everything will always be easy, or that distance won\u2019t sometimes be genuinely hard, because I\u2019d be lying, and you deserve better than a pretty lie.',
-      'What I can promise is smaller than that, and truer: what I feel for you is real. Not performed, not convenient, not said because it\u2019s your birthday and it sounds nice.',
-      'I\u2019ll keep choosing you. I\u2019ll keep showing up for you, caring for you, and appreciating you \u2014 not because it\u2019s easy, but because you\u2019re worth choosing, on the hard days and the easy ones both.',
+      'I’m not going to promise ki sab kuch hamesha easy rahega, ya distance kabhi difficult nahi lagega. Kabhi lagega, aur main tumse jhootha promise nahi karna chahta. Tum usse better deserve karti ho.',
+      'But ek cheez main honestly promise kar sakta hoon — jo main tumhare liye feel karta hoon, woh real hai. Sirf tumhara birthday hai isliye nahi, ya achha lagta hai bolne mein isliye nahi. I genuinely mean it.',
+      'Main tumhe choose karta rahunga. Tumhare liye show up karta rahunga, tumhari care karta rahunga aur tumhe appreciate karta rahunga — sirf easy days mein nahi, difficult days mein bhi. Because you’re worth choosing, every single time.',
     ],
   },
   {
@@ -107,12 +107,17 @@ export const letters: Letter[] = [
     title: 'Always & Forever',
     preview: 'The longest letter. Read it last.',
     body: [
-      'I want to be honest about the distance, because pretending it doesn\u2019t exist would be unfair to both of us. It\u2019s there. Some nights it\u2019s heavier than others, and there are moments I miss you in a way that doesn\u2019t translate well into words \u2014 not "I miss talking to you," but something closer to missing the physical fact of you being near.',
-      'I think about what it would be like to just reach over and have you actually there. Not a call. Not a screen. You, in the room, close enough that I don\u2019t have to imagine it.',
-      'But here\u2019s the other half of that honesty: I wouldn\u2019t trade what we\u2019ve built for something easier. You chose to understand me \u2014 the parts of me that are simple to love, and the parts that take more patience than they should. You chose to accept those parts too, without making me feel small for having them.',
-      'That\u2019s not a small thing. People don\u2019t do that easily, and you\u2019ve done it consistently, from far away, with nothing forcing you to.',
-      'So on your birthday, across whatever distance separates us right now, I want you to know this clearly: I love your presence in my life. I love that you exist, that you chose me, and that somewhere out there, you\u2019re reading this and \u2014 I hope \u2014 smiling a little.',
-      'Always and forever, however far apart, I\u2019m yours.',
+      'I want to be honest about the distance, kyunki pretend karna ki yeh matter nahi karta, hum dono ke liye unfair hoga. It does. Kuch nights zyada difficult hoti hain, aur kabhi-kabhi tumhari yaad sirf "I miss talking to you" wali nahi hoti. I just miss having you near me.',
+
+      'Kabhi sochta hoon kaisa hota agar bas haath badhaun aur tum actually mere paas ho. Na call, na screen… bas tum, mere saamne, itni close ki mujhe tumhe imagine na karna pade.',
+
+      'But despite all that, main jo humne build kiya hai usse kisi easier cheez ke liye trade nahi karunga. Tumne mujhe samajhna choose kiya — meri easy-to-love wali side bhi, aur woh parts bhi jinke liye thodi extra patience chahiye. Aur tumne kabhi mujhe un cheezon ke liye less feel nahi karwaya.',
+
+      'That means a lot to me. Log itni easily kisi ko accept nahi karte, but tumne kiya hai… consistently, itni door rehkar bhi, bina kisi reason ke.',
+
+      'So tumhare birthday par, chahe abhi hum kitni bhi door hain, main bas tumhe yeh clearly batana chahta hoon — I love having you in my life. I love that you exist, that you chose me, aur kahin door baithkar tum abhi yeh padh rahi ho… aur hopefully thoda sa smile bhi kar rahi ho.',
+
+      'Always and forever. Distance chahe jitna bhi ho, I’m yours.',
     ],
     signature: 'radhika ayush mishra',
   },

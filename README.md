@@ -22,13 +22,30 @@ This outputs everything into `dist/` — you can drag that folder into any stati
 
 ## Replacing the placeholder photos
 
-Everything is in **`src/data/images.ts`**. That's the only file you need to touch.
-Each slot is clearly labeled by section (hero, story, love-most, distance, finale).
-Two ways to swap a photo in:
+You shouldn't need to touch any code for this. `src/data/images.ts` now wires up
+18 numbered photo slots automatically:
 
-1. Drop a real photo into `src/assets/photos/`, import it at the top of `images.ts`,
-   and use it in place of the placeholder URL.
-2. Or just paste a hosted image URL directly as a string.
+1. Name your 18 photos so each one **ends in a number 1 through 18**
+   (e.g. `photo1`, `photo2`... or `anu1`, `anu2`... or `pic1`, `pic2`... —
+   any name works, as long as it ends with the number).
+2. Drop them straight into `src/assets/photos/`.
+   Any common image format works — `.jpg`, `.jpeg`, `.png`, or `.webp` —
+   and files don't all need to match the same extension.
+3. Done. Whichever file ends in "1" fills the 1st slot, "2" the 2nd, and so on.
+
+Which number goes where:
+
+| Photos | Section |
+|---|---|
+| 1 – 4 | Hero (floating polaroids at the top) |
+| 5 – 8 | Story ("Where It All Started" timeline) |
+| 9 – 11 | LoveMost ("What I Love Most") |
+| 12 – 13 | Distance (left / right silhouettes) |
+| 14 – 18 | Finale (closing collage) |
+
+Any slot you haven't filled in yet just falls back to a placeholder image, so the
+site keeps working while you're still gathering photos — add the missing ones
+whenever you have them.
 
 ## Editing the words
 
@@ -49,11 +66,14 @@ to tweak the wording, timing, or mascot styling.
 
 ## Background music
 
-The music button in the bottom-right corner plays a soft original instrumental —
-generated live in the browser with Tone.js (see `src/audio/theme.ts`), so there's
-no audio file to source or license. Playback never starts on its own; it only
-begins when the button is tapped. You can tweak the chords, tempo, or tone
-color directly in that file if you want a different mood.
+The music button in the bottom-right corner loops the track at
+`src/assets/audio/background-music.mp3` (see `src/audio/theme.ts`). Playback
+never starts on its own; it only begins when the button is tapped. Want a
+different track? Just replace that mp3 file with another one of the same name.
+
+This background music automatically pauses for the cake-cutting "Happy
+Birthday" song (see above) and resumes right after, so the two never play
+on top of each other.
 
 ## Structure
 

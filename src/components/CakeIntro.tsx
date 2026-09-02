@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import CheerMascot from './CheerMascot';
 import { playHappyBirthday } from '../audio/birthdaySong';
+import { theme } from '../audio/theme';
 import { girlfriendName } from '../data/content';
 
 type Stage = 'lit' | 'singing' | 'readyToCut' | 'cutting' | 'cut';
@@ -45,12 +46,14 @@ export default function CakeIntro({ onStoryStart }: CakeIntroProps) {
     if (stage !== 'lit') return;
     setStage('singing');
     firePartyPoppers();
+    theme.duck(); // pause background music so it doesn't overlap the cake song
 
     songHandleRef.current = await playHappyBirthday(girlfriendName, {
       onLine: (text) => setLyricLine(text),
       onComplete: () => {
         setLyricLine(`Happy Birthday, my love ${girlfriendName}! \u2764`);
         setStage('readyToCut');
+        theme.resume(); // background music comes back after the cake song ends
       },
     });
   }, [stage]);
